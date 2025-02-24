@@ -17,3 +17,4 @@ def selection_sort(nums: List[int])->None:
     n = len(nums)
 
     sorted_index = 0
+    index
