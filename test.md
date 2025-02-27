@@ -14,7 +14,7 @@
 ```python
 from typing import List
 
-def selection_sort(nums: List[int]) -> None:  # 修改返回类型为None
+def selection_sort(nums: List[int]) -> None:
     """
     选择排序
     :param nums: 待排序的整数列表（原地修改）
@@ -23,14 +23,15 @@ def selection_sort(nums: List[int]) -> None:  # 修改返回类型为None
     sorted_index = 0
     while sorted_index < n:
         min_index = sorted_index
-        for i in range(sorted_index, n):  # 添加逗号后空格
+        for i in range(sorted_index, n):
             if nums[i] < nums[min_index]:
                 min_index = i
-        nums[sorted_index], nums[min_index] = nums[min_index], nums[sorted_index]  # 添加操作符周围空格
+        nums[sorted_index], nums[min_index] = nums[min_index], nums[sorted_index]
         sorted_index += 1
+```
 
 ### 算法特性
-- **时间复杂度**：O(n²)  # 修正符号格式
+- **时间复杂度**：O(n²)
 - **空间复杂度**：O(1)
 - **稳定性**：不稳定排序  
   示例：`[5,8,5,2,9]`  
