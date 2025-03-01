@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # 排序算法
 # Mcode
 
