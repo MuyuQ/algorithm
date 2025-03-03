@@ -43,4 +43,5 @@ def selection_sort(nums: List[int]) -> None:
   原始序列中两个5的相对位置改变
 - **原地排序**：是
 - a
+- 3
 
