@@ -42,6 +42,7 @@ def selection_sort(nums: List[int]) -> None:
   第二次交换 → `[2,5,8,5,9]`
   原始序列中两个5的相对位置改变
 - **原地排序**：是
-- a
-- 3
 
+## 冒泡排序
+选择排序失去稳定性的原因是 每次都要交换最小元素(nums[minIndex])和当前元素(nums[sortedInde]),这样会改变相同元素的相对位置.
+为了解决这个问题,可以让nums[sortedIndex....minIndex]的元素都往后移动一位,把nums[sortedIndex+1]的位置空出来,放置nums[sortedIndex].
