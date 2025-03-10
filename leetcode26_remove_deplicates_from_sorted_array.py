@@ -1,9 +1,9 @@
 # -- coding: utf-8 --
 # @Time : DATEDATE{TIME}
 # @Author : Mcode
+
+
 nums = [1, 1, 2]
-
-
 def remove_deplicates(nums) -> int:
     """
     双指针法,
