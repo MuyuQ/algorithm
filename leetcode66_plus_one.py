@@ -9,7 +9,7 @@ def plus_one(digits):
     :param digits:
     :return:
     """
-    tmp = ''
+    tmp = ""
     tmp_list = []
     for i in digits:
         tmp = tmp + str(i)
@@ -19,6 +19,7 @@ def plus_one(digits):
     if len(digits) > len(tmp_list):
         tmp_list.insert(0, 0)
     return tmp_list
+
 
 digits = [1, 2, 3]
 print(plus_one(digits))
@@ -43,6 +44,7 @@ def plus_one_2(digits):
 
     return digits
 
+
 digits = [1, 2, 3]
 print(plus_one_2(digits))
 
@@ -61,6 +63,7 @@ def plus_one_3(digits):
     if digits[0] == 0 and len(tmp) < len(digits):
         tmp.insert(0, 0)
     return tmp
+
 
 digits = [1, 2, 3]
 print(plus_one_3(digits))
