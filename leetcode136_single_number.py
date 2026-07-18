@@ -1,7 +1,8 @@
 # -- coding: utf-8 --
 # @Time : DATEDATE{TIME}
 # @Author : Mcode
-nums = [1,2,2,3,3,3]
+nums = [1, 2, 2, 3, 3, 3]
+
 
 def single_number(nums):
     """
@@ -19,6 +20,7 @@ def single_number(nums):
         if v == 1:
             return k
 
+
 print(single_number(nums))
 
 
@@ -32,9 +34,10 @@ def single_number_2(nums):
     tmp_dict = {}
     for num in nums:
         tmp_dict[num] = tmp_dict.get(num, 0) + 1
-    for k,v in tmp_dict.items():
-        if v ==1:
+    for k, v in tmp_dict.items():
+        if v == 1:
             return k
+
 
 def single_number_3(nums):
     """
@@ -42,10 +45,13 @@ def single_number_3(nums):
     :param nums:
     :return:
     """
-    nums = [1,2,2,3,3,4,1]
+    nums = [1, 2, 2, 3, 3, 4, 1]
     from collections import Counter
+
     dict = Counter(nums)
-    for k,v in dict.items():
+    for k, v in dict.items():
         if v == 1:
             return k
+
+
 print(single_number_3(nums))

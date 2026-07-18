@@ -2,6 +2,7 @@
 # @Time : DATEDATE{TIME}
 # @Author : Mcode
 
+
 # 快慢指针,双循环,列表pop方法
 def move_zeros(nums):
     """
@@ -17,7 +18,9 @@ def move_zeros(nums):
             nums[j], nums[i] = nums[i], nums[j]
         i += 1
     return nums
-nums = [0,1,0,3,12]
+
+
+nums = [0, 1, 0, 3, 12]
 print(move_zeros(nums))
 
 
@@ -33,12 +36,15 @@ def move_zeros_2(nums):
         if nums[i] == 0:
             nums.pop(i)
             nums.append(0)
-            length-=1
+            length -= 1
         else:
-            i+=1
+            i += 1
     return nums
-nums = [0,1,0,3,12]
+
+
+nums = [0, 1, 0, 3, 12]
 print(move_zeros(nums))
+
 
 def move_zeros_3(nums):
     """
@@ -48,14 +54,17 @@ def move_zeros_3(nums):
     """
     slow = 0
     for fast in range(len(nums)):
-        if nums[fast]!=0:
-            nums[slow]=nums[fast]
-            slow+=1
-    for i in range(slow,len(nums)):
-        nums[i]=0
+        if nums[fast] != 0:
+            nums[slow] = nums[fast]
+            slow += 1
+    for i in range(slow, len(nums)):
+        nums[i] = 0
     return nums
-nums = [0,1,0,3,12]
+
+
+nums = [0, 1, 0, 3, 12]
 print(move_zeros(nums))
+
 
 def move_zeros_4(nums):
     """
