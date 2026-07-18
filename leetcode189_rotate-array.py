@@ -7,6 +7,7 @@
 要求空间复杂度为O(1),所以不能使用切片/临时列表等方法.
 
 """
+
 nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
@@ -65,6 +66,7 @@ def rotate_3(nums, k):
     #     k = k - length
     # 取余即可
     k = k % length
+
     def swap(l, r):
         r -= 1
         while l < r:

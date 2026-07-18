@@ -4,6 +4,8 @@
 
 
 nums = [1, 1, 2]
+
+
 def remove_deplicates(nums) -> int:
     """
     双指针法,
@@ -43,7 +45,7 @@ def remove_deplicates_2(nums) -> int:
     
     :param nums: 需要处理的列表
     :return: 去重后的列表大小
-    """""
+    """ ""
     i, j = 0, 1
     length = len(nums)
     if length == 0:
